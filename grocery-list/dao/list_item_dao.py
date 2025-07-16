@@ -33,4 +33,5 @@ class ListItemDao:
     
     def delete_list(self):
         self.conn.execute(text("delete from list_item"))
+        self.conn.commit()
     
