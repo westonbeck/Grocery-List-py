@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Item and Meal Manager</title>
+  <!-- Link static JS files using the /static path -->
+  <script src="/static/script.js" defer></script>
+  <script src="/static/list.js" defer></script>
+  <script src="/static/main.js" defer></script>
+</head>
+<body>
+  <!-- Define elements that the JS code expects -->
+  <h1>Grocery List App</h1>
+
+  <!-- Items table -->
+  <table id="mainItemTable">
+    <tr><th>Item</th><th>Description</th><th>Add</th><th>Actions</th></tr>
+    <!-- Rows will be populated by main.js -->
+  </table>
+
+  <!-- Meals table -->
+  <table id="mainMealTable">
+    <tr><th>Meal</th><th>Description</th><th>Add</th><th>Actions</th></tr>
+    <!-- Rows will be populated by main.js -->
+  </table>
+
+  <!-- Current list dropdown -->
+  <h2>Current List</h2>
+  <select id="currentItemsList" size="5" style="min-width:200px;"></select>
+  <br><button id="resetList">Reset List</button>
+
+  <!-- Buttons to open modals for adding new items/meals -->
+  <button id="addNewItemButton">Add New Item</button>
+  <button id="addNewMealButton">Add New Meal</button>
+
+  <!-- (Optional modal dialogs for add/edit can be defined here) -->
+
+</body>
+</html>
